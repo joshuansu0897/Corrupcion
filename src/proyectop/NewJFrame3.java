@@ -28,25 +28,32 @@ public class NewJFrame3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        foto = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         jTextField1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(660, 360));
+        setResizable(false);
         getContentPane().setLayout(null);
 
+        foto.setBackground(new java.awt.Color(10, 10, 10));
+        getContentPane().add(foto);
+        foto.setBounds(10, 70, 210, 240);
+
         jButton1.setText("Cerrar ventana");
+        jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(303, 10, 200, 23);
+        jButton1.setBounds(520, 30, 120, 30);
 
         jComboBox1.setBackground(new java.awt.Color(102, 102, 102));
         jComboBox1.setEditable(true);
@@ -63,13 +70,13 @@ public class NewJFrame3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(0, 0, 98, 20);
+        jComboBox1.setBounds(120, 30, 150, 20);
 
         jTextPane1.setEditable(false);
         jScrollPane1.setViewportView(jTextPane1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(190, 60, 320, 214);
+        jScrollPane1.setBounds(230, 70, 420, 240);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,33 +84,29 @@ public class NewJFrame3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(0, 31, 260, 20);
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 60, 190, 210);
+        jTextField1.setBounds(290, 30, 220, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectop/independencia-mexico-660x330.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/independencia-mexico-660x330.jpg"))); // NOI18N
+        jLabel2.setText("JKHJGHFGHjhgj");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 520, 260);
+        jLabel2.setBounds(0, 0, 660, 340);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-               asd = jComboBox1.getSelectedIndex();
-        if(asd==1){
-              jTextPane1.setText("Miguel Gregorio Antonio Ignacio Hidalgo y Costilla Gallaga Mandarte y Villaseñor1 2 (Hacienda de Corralejo en Pénjamo, hoy en el estado de Guanajuato, 8 de mayo de 1753-Chihuahua, Chihuahua, 30 de julio de 1811) fue un sacerdote y revolucionario novohispano que destacó iniciando la primera etapa de la Guerra de Independencia de México con un acto conocido en la historiografía mexicana como Grito de Dolores. Dirigió militar y políticamente la primera parte del movimiento independentista, pero tras una serie de derrotas fue capturado el 21 de marzo de 1811 y llevado prisionero a la ciudad de Chihuahua, donde fue juzgado y fusilado el 30 de julio.");
+        asd = jComboBox1.getSelectedIndex();
+        if (asd == 1) {
+            jTextPane1.setText("Miguel Gregorio Antonio Ignacio Hidalgo y Costilla Gallaga Mandarte y Villaseñor1 2 (Hacienda de Corralejo en Pénjamo, hoy en el estado de Guanajuato, 8 de mayo de 1753-Chihuahua, Chihuahua, 30 de julio de 1811) fue un sacerdote y revolucionario novohispano que destacó iniciando la primera etapa de la Guerra de Independencia de México con un acto conocido en la historiografía mexicana como Grito de Dolores. Dirigió militar y políticamente la primera parte del movimiento independentista, pero tras una serie de derrotas fue capturado el 21 de marzo de 1811 y llevado prisionero a la ciudad de Chihuahua, donde fue juzgado y fusilado el 30 de julio.");
             jTextField1.setText("Miguel Hidalgo y Costilla");
-              jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectop/miguel hidalgo.gif"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 470, 320);
+            foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/miguel hidalgo.gif"))); // NOI18N
+            foto.setBounds(10, 40, 470, 320);
         }
-        if (asd==2){
-            
+        if (asd == 2) {
             jTextPane1.setText("José María Morelos (Valladolid [hoy Morelia], [30 de septiembre] de 1765 - Ecatepec, 22 de diciembre de 1815) ―llamado Siervo de la Nación― fue un sacerdote, militar insurgente y patriota mexicano, que organizó y fue el artífice de la segunda etapa (1811-1815) de la Guerra de Independencia Mexicana, nació en la antigua villa mexicana de Valladolid (hoy llamada Morelia en su honor) y estudió durante los primeros años de su vida con su abuelo materno. Estudió la carrera de sacerdote en el Colegio de San Nicolás y en 1789 entró al seminario de Valladolid, donde se graduó en 1795. En 1799 fue nombrado cura de Carácuaro, donde permaneció hasta 1810.");
-        jTextField1.setText("José María Morelos");
-          jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectop/Jose_Maria_Morelos-003-Art-Portrait.jpg"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 470, 320);
+            jTextField1.setText("José María Morelos");
+            foto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/Jose_Maria_Morelos-003-Art-Portrait.jpg"))); // NOI18
+            foto.setBounds(10, 40, 470, 320);
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
@@ -116,15 +119,14 @@ public class NewJFrame3 extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     dispose();
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-         
-       
+
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -151,19 +153,19 @@ public class NewJFrame3 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
+
                 new NewJFrame3().setVisible(true);
-                
+
             }
-     
+
         });
-    
+
     }
-private int asd;
+    private int asd;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel foto;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;

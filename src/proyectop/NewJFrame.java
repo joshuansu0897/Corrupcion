@@ -1,5 +1,5 @@
-
 package proyectop;
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -30,6 +30,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
@@ -47,7 +48,7 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(180, 180, 110, 23);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectop/independencia-de-mexico-grito de dolores.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/independencia-de-mexico-grito de dolores.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 0, 470, 320);
 
@@ -55,9 +56,9 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     new NewJFrame1().setVisible(true);
-     dispose();
-      
+        new NewJFrame1().setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -91,7 +92,7 @@ public class NewJFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new NewJFrame().setVisible(true);
-               
+
             }
         });
     }

@@ -35,6 +35,8 @@ public class NewJFrame2 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(500, 310));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jToggleButton1.setText("jToggleButton1");
@@ -44,9 +46,10 @@ public class NewJFrame2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jToggleButton1);
-        jToggleButton1.setBounds(170, 0, 105, 23);
+        jToggleButton1.setBounds(190, 0, 105, 23);
 
         jCheckBox1.setText("Biografías");
+        jCheckBox1.setOpaque(false);
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
@@ -55,9 +58,11 @@ public class NewJFrame2 extends javax.swing.JFrame {
         getContentPane().add(jCheckBox1);
         jCheckBox1.setBounds(370, 0, 150, 23);
 
+        jRadioButton1.setForeground(new java.awt.Color(240, 240, 240));
         jRadioButton1.setText("Video");
+        jRadioButton1.setOpaque(false);
         getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(0, 0, 51, 23);
+        jRadioButton1.setBounds(0, 0, 100, 23);
 
         jEditorPane1.setEditable(false);
         jEditorPane1.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
@@ -67,15 +72,15 @@ public class NewJFrame2 extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(50, 40, 410, 230);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectop/independencia-de-mexico.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/independencia-de-mexico.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 520, 310);
+        jLabel2.setBounds(0, 0, 520, 290);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        if(jCheckBox1.isSelected()){
+        if (jCheckBox1.isSelected()) {
             new NewJFrame3().setVisible(true);
         }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
